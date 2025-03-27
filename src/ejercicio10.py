@@ -36,6 +36,7 @@ rounds = [
     }
 ]
 
+
 #a partir del diccionario proporcionado voy a tener que crear un nuevo diccionario con los puntajes
 #creo mi nuevo diccionario donde almaceno kill ass y d(los puntajes totales)
 scores = {} 
@@ -76,19 +77,19 @@ for round_number, r in enumerate(rounds, start = 1): #por cada ronda. Al princip
             'deaths': int(valor['deaths']),
             'points': score_round
         }
+
     #organizo la tabla de mayor a menor
     sorted_round = sorted(round_scores.items(), key=lambda x: x[1]['points'], reverse=True)
 
     #imprimo la tabla ORDENADA
     for player, score in sorted_round:
-        print(f'nombre: {player} : {score}')
-        #print(f'nombre: {player}, {r.values()},\n')        
+        print(f'nombre: {player} : {score}')     
 
     #busco al jugador con mayor puntaje de la ronda actual y lo guardo en mvp_ronda
     mvp_ronda = max(round_scores, key=lambda p: round_scores[p]['points'])
     print(f'el mvp de la ronda fue: {mvp_ronda}')
     mvp[mvp_ronda] += 1 #le sumo al jugador correspondiente 1 en la cuenta de veces de mvp
-    #
+    
 print("-" * 100)
 print("Ranking final: ")
 print("-" * 100)
