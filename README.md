@@ -4,3 +4,4 @@ Además tuve que agregar la ruta a la carpeta raiz de mi proyecto importando sys
 Antes de entregar moví todos los archivos a la carpeta src como solicita la entrega.
 Para ejecutar el programa, en la terminal tengo que abrir mi carpeta (entrega2seminario).
 Una vez que estoy en la carpeta, ejecuto en la terminal el comando py src/ejercicio10.py o el ejercicio que quiera ejecutar.
+Ademas agregué el entorno virtual con el comando python -m venv
