@@ -82,8 +82,7 @@ for round_number, r in enumerate(rounds, start = 1): #por cada ronda. Al princip
     #imprimo la tabla ORDENADA
     for player, score in sorted_round:
         print(f'nombre: {player} : {score}')
-        #print(f'nombre: {player}, {r.values()},\n')
-        
+        #print(f'nombre: {player}, {r.values()},\n')        
 
     #busco al jugador con mayor puntaje de la ronda actual y lo guardo en mvp_ronda
     mvp_ronda = max(round_scores, key=lambda p: round_scores[p]['points'])
